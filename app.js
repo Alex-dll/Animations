@@ -8,9 +8,9 @@ const flexBoard = document.getElementById("flex-board");
 const illustration = document.getElementById("illustration");
 
 const contentList = [
-  {img: "https://i.pinimg.com/originals/c7/c4/7d/c7c47df2029f48c112eee65625f9ef8b.png"},
-  {img: "https://images.vexels.com/media/users/3/158558/isolated/preview/60b6cba6210b4313e1168a74976a9039-menina-swimsuit-flor-surfboard-apartamento-by-vexels.png"},
-  {img: "https://i.imgur.com/0IGqo2X.png"}
+  {img:"./assets/surf.png"},
+  {img: "./assets/practice surf.png"},
+  {img: "./assets/luau.png"}
 ]
 
 document.getElementById("bl-1").scrollIntoView();
