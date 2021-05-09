@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&family=Yanone+Kaffeesatz:wght@300;400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #7829f1;
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Varela Round", sans-serif;
+  color: #7829f1;
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+  font-family: "Varela Round", sans-serif;
+  color: #707070;
+  margin: 0;
+}
+
+body {
+  background: #a8e1d7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 1000px;
+  height: 500px;
+  background: #faf9f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu {
+  width: 70px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15px;
+}
+
+.menu svg {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  color: #707070;
+}
+
+.menu .selected {
+  color: #7829f1;
+}
+
+.board-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.board-container .board {
+  background: white;
+  width: 600px;
+  height: 370px;
+  -webkit-box-shadow: -9px 13px 31px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: -9px 13px 31px -16px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  right: 30px;
+  border-radius: 80px;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: board-right-grow 1s;
+          animation: board-right-grow 1s;
+}
+
+.board-container .board .board-left,
+.board-container .board .board-right {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.board-container .board .board-left .info-img,
+.board-container .board .board-right .info-img {
+  margin-top: 15px;
+  height: 150px;
+  border-radius: 16px;
+}
+
+.board-container .board .board-left .header svg,
+.board-container .board .board-right .header svg {
+  color: #7829f1;
+  width: 30px;
+  height: 30px;
+}
+
+.board-container .board .board-left .subheader svg,
+.board-container .board .board-right .subheader svg {
+  color: #707070;
+}
+
+.board-container .board .board-right p {
+  margin: 5px 0;
+}
+
+.board-container .board .board-right h2 {
+  margin: 20px 0;
+}
+
+.board-container .board .inline-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.board-container .board .inline-content svg {
+  margin: 0 5px;
+}
+
+.board-container .board .card {
+  height: 100%;
+  padding: 40px;
+}
+
+.board-container .flex-board {
+  width: 600px;
+  height: 370px;
+  background: #7829f1;
+  border-radius: 80px;
+  position: absolute;
+  right: 300px;
+}
+
+.board-container .flex-board .illustration {
+  width: 200px;
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  opacity: 1;
+}
+
+.board-container .flex-board-open {
+  -webkit-animation: board-right-grow 0.5s ease 0s forwards;
+          animation: board-right-grow 0.5s ease 0s forwards;
+}
+
+.board-container .flex-board-open .illustration {
+  -webkit-animation: show 0.5s forwards;
+          animation: show 0.5s forwards;
+}
+
+.board-container .flex-board-close {
+  -webkit-animation: board-right-shrink 0.5s ease 0s forwards;
+          animation: board-right-shrink 0.5s ease 0s forwards;
+}
+
+.board-container .flex-board-close .illustration {
+  -webkit-animation: hide 0.5s forwards;
+          animation: hide 0.5s forwards;
+}
+
+@-webkit-keyframes board-right-grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 600px;
+  }
+}
+
+@keyframes board-right-grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 600px;
+  }
+}
+
+@-webkit-keyframes board-right-shrink {
+  0% {
+    width: 600px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes board-right-shrink {
+  0% {
+    width: 600px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
