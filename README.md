@@ -10,6 +10,6 @@
 
 ## How to previsualization the site
 1.  ### GitHub Pages
-> - To previsualization the site you need click [**Here**]([https://alex-dll.github.io/Animations/](https://alex-dll.github.io/Animations/)). 
+> - To previsualization the site you need click [**Here**](https://alex-dll.github.io/Animations/). 
 
 
