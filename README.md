@@ -3,7 +3,7 @@
 ## This is my animation site 📜
 ![Animations gif](https://github.com/Alex-dll/Animations/blob/master/assets/animations.gif?raw=true)
 
-## Used tools 🪚
+## Used tools 🧰
 -  Sass CSS
 -  Animations whith css
 -  Javascript
